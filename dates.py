@@ -1,14 +1,3 @@
-
-
-
-
-
-
-
-
-
-
-
 def calculate(date):
     date_sep = []
     date_sep = date.split('/')
