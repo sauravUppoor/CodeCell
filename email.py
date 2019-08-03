@@ -3,9 +3,9 @@ def check(email):
 	newEmail = ""
 	id[0] = id[0].replace('.', '')
 	id[1] = id[1].replace('.', '')
-	if(id[0].find('#') != -1):
+	if(id[0].find('+') != -1):
 		if(not ((id[0][0: id[0].find('#')] + id[1]) in unique)):
-			unique.append(id[0][0: id[0].find('#')] + id[1])
+			unique.append(id[0][0: id[0].find('+')] + id[1])
 			
 	else:
 
