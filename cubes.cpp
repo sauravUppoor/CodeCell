@@ -47,7 +47,6 @@ int main() {
     convert >> x;
     
     cout << cube(n, x)<<"\n";
-    //cout << mod("29999999997", 1000007);
     return 0;
 }
 
