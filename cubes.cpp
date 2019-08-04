@@ -20,22 +20,19 @@ int cube(string n1, double n) {
     ostringstream sumString;
     sumString.precision(0);
     if(mod(n1,3) == 0){
-        r0 = (double)n / 3;
+        r0 = floor(n / 3);
         sum = r0 * (18);
     }
     else if(mod(n1,3) == 1) {
-        r0 = n / 3;
+        r0 = floor(n / 3);
         sum = r0*1 + (r0 - 1)*(17);
     }
     else if(mod(n1,3) == 2) {
         r0 =floor(n/3);
-       // cout <<fixed<< (int)r0<<"\n";
         sum = 9*(2*r0+1);
-        //cout<<fixed<< (int)sum << "\n";
         
     }
     sumString << std::fixed<<sum;
-    //cout<<fixed<<sumString.str();
     return mod(sumString.str(), 1000007);
 }
 int main() {
